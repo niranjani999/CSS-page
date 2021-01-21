@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #112d42;
+}
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #03a9f4;
+}
+section .container{
+    position: relative;
+    display: flex;
+    z-index: 1000;
+    min-height: 550px;
+    min-width: 1100px;
+}
+section .container .image{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: cornsilk;
+    z-index: 1;
+    display: flex;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.3);
+}
+section .container .image img{
+    width: 100%;
+}
+section .container .about{
+    position: absolute;
+    padding: 70px 50px;
+    font-size: 20px;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.5);
+}
+
+section .container .about h1{
+    text-align: center;
+    margin: 0 auto 50px;
+    position: relative;
+    line-height: 55px;
+    color: black;
+}
+section .container .about h1::after{
+    content: '';
+    background:#ff523b ;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section .container .about .connect button{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    padding: 8px;
+    width: 300px;
+    background-color:#ff523b;
+    color: white;
+    cursor: pointer;
+}
+section .container .about .connect button:hover{
+    transition: 1s;
+    background-color: wheat;
+    color: #e71f04;
+}
+.more-details, .wrapper{
+    padding: 40px;
+    font-size: 20px;
+}
+.wrapper{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.wrapper .wrap{
+    background:wheat;
+    font-size: 20px;
+    margin: 50px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 250px;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.3);
+}
+.wrap h3{
+    text-align: center;
+    margin: 0 auto 50px;
+    position: relative;
+    line-height: 50px;
+    color: black;
+}
+.wrap h3::after{
+    content: '';
+    background:#ff523b ;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width:560px){
+    .wrapper .wrap{
+        min-width: 320px;
+        padding: 10px;
+        height: 200px;
+        font-size: 16px;
+        text-align: left;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    }
+    .more-details{
+        padding: 40px;
+        font-size: 18px;
+    }
+    #mission{
+        height: 250px;
+    }
+    .wrap h3{
+        margin: 0 auto 20px;
+    }
+    section .container .about .connect button{
+        font-size: 18px;
+        padding: 6px;
+        width: 180px;
+    }
+    section::before{
+        width: 0%;
+        height: 0%;
+    }
+    section .container{
+        min-width: 320px;
+    }
+    section .container .image{
+        display: none;
+    }
+    section .container .about{
+        padding: 30px 20px;
+        font-size: 18px;
+        margin-left: 20px;
+        padding-left: 20px;
+        width: 320px;
+        margin-top: 20px;
+        height: 94%;
+        
+    }
+    section .container .about h1::after{
+        width: 60px;  
+    }
+    section .container .about h1{
+        margin: 0 auto 20px;
+        line-height: 55px;
+    }
+    section .container .about h3{
+        font-size: 18px;
+    }
+    section{
+        position: relative;
+        display: flex;
+        min-height: 100vh;
+        background: url("https://tse4.mm.bing.net/th?id=OIP.Az0kCiSA0qH7lqdcKX6e9wHaEo&pid=Api&P=0&w=255&h=160");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 100px;
+    }
+}
+@media (max-width:800px){
+    @media (min-width:549px){
+        .wrapper .wrap{
+            min-width: 490px;
+            padding: 10px;
+            height: 200px;
+            font-size: 20px;
+            text-align: left;
+            box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+        }
+        .more-details{
+            padding: 40px;
+            font-size: 20px;
+        }
+        #mission{
+            height: 240px;
+        }
+        .wrap h3{
+            margin: 0 auto 20px;
+        }
+        section .container .about .connect button{
+            font-size: 22px;
+            padding: 7px;
+            width: 210px;
+        }
+        section::before{
+            width: 0%;
+            height: 0%;
+        }
+        section .container{
+            min-width: 550px;
+        }
+        section .container .image{
+            display: none;
+        }
+        section .container .about{
+            padding: 30px 20px;
+            font-size: 18px;
+            margin-left: 0;
+            padding-left: 20px;
+            min-width: 550px;
+            margin-top: 45px;
+            height: 92%;
+            
+        }
+        section .container .about h1::after{
+            width: 90px;  
+        }
+        section .container .about h1{
+            margin: 0 auto 20px;
+            line-height: 60px;
+        }
+        section .container .about h3{
+            font-size: 22px;
+        }
+        section{
+            position: relative;
+            display: flex;
+            min-height: 100vh;
+            background: url("https://tse4.mm.bing.net/th?id=OIP.Az0kCiSA0qH7lqdcKX6e9wHaEo&pid=Api&P=0&w=255&h=160");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 100px;
+        }
+    }
+}
+@media (max-width:900px){
+    @media (min-width:800px){
+        section .container .about{
+            font-size: 18px;
+            height: 100%;  
+        }
+}
+}
+@media (max-width:1100px){
+    @media (min-width:800px){
+        section .container{
+            min-width: 750px;
+        }
+        section .container .about{
+            font-size: 18px;
+            height: 100%;
+        }
+        section{
+            min-height: 100vh;
+            margin-top: 100px;
+        }
+        section .container .about h1{
+            margin: 0 auto 20px;
+            line-height: 65px;
+        }
+    }
+}
